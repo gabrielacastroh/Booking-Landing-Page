@@ -15,9 +15,8 @@
 </head>
 
 <body>
-
+	<!-- Contenedor Parte 1 -->
 	<div class="first">
-
 		<!-- NAVEGATION -->
 		<nav class="navbar navbar-expand-sm navbar-light" style="background-color: #112d4e;">
 			<!-- LOGO -->
@@ -54,7 +53,7 @@
 			</div>
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-					<img src="/Tarea_PHP/img/caribe.jpg" class="d-block w-100" alt="...">
+					<img src="/Tarea_PHP/img/caribe.jpg" class="d-block w-100" alt="Cartagena-carousel">
 					<div class="carousel-caption d-none d-md-block">
 						<h5>Cartagena</h5>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga harum necessitatibus dolorum aliquid dolores doloribus, qui aut inventore rem asperiores unde eligendi! Atque ipsa ullam ipsum beatae ratione asperiores libero?</p>
@@ -71,7 +70,7 @@
 					</div>
 				</div>
 				<div class="carousel-item">
-					<img src="/Tarea_PHP/img/caribe2.jpg" class="d-block w-100" alt="...">
+					<img src="/Tarea_PHP/img/caribe2.jpg" class="d-block w-100" alt="Barranquilla-carousel">
 					<div class="carousel-caption d-none d-md-block">
 						<h5>Barranquilla</h5>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga harum necessitatibus dolorum aliquid dolores doloribus, qui aut inventore rem asperiores unde eligendi! Atque ipsa ullam ipsum beatae ratione asperiores libero?.</p>
@@ -88,7 +87,7 @@
 					</div>
 				</div>
 				<div class="carousel-item">
-					<img src="/Tarea_PHP/img/caribe3.jpg" class="d-block w-100" alt="...">
+					<img src="/Tarea_PHP/img/caribe3.jpg" class="d-block w-100" alt="SantaMarta-carousel">
 					<div class="carousel-caption d-none d-md-block">
 						<h5>Santa Marta</h5>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga harum necessitatibus dolorum aliquid dolores doloribus, qui aut inventore rem asperiores unde eligendi! Atque ipsa ullam ipsum beatae ratione asperiores libero?</p>
@@ -115,118 +114,154 @@
 			</button>
 		</div>
 	</div>
-
+	<!-- Contenedor Parte 2 -->
 	<div class="second">
-		<div class="titulo">
-			<a name="titulo">
+		<a name="titulo">
+			<!-- Titulo Reservas -->
+			<div class="titulo">
 				<h2 class="text-center">Reservas</h2>
-			</a>
-		</div>
-		<div class="container c_form d-flex justify-content-center">
-			<div class="container-form ">
-				<form action="" >
-					<div class="row mb-2 ">
-						<div class="col-4">
-							<label for="" class="form-label ">Nombre</label>
-							<input type="text" name="" id="" class="form-control form-control-sm" placeholder="Nombre">
-						</div>
-						<div class="col-4">
-							<label for="" class="form-label">
-								Apellido
-							</label>
-							<input type="text" name="" id="" class="form-control form-control-sm" placeholder="Apellido">
-						</div>
-						<div class="col-4">
-							<label for="" class="form-label">Cédula</label>
-							<input type="text" name="" id="" class="form-control form-control-sm" placeholder="Cédula">
-						</div>
-					</div>
-					<div class="row mb-2">
-						<div class="col-2">
-							<label class="form-label">Ciudad</label>
-						</div>
-
-						<div class="col-3">
-							<div class="form-check">
-								<input type="radio" name="" id="" class="form-check-input">Cartagena
-								<label for="" class="form-check-label"></label>
-							</div>
-						</div>
-
-						<div class="col-3">
-
-							<div class="form-check ">
-								<input type="radio" name="" id="" class="form-check-input">Barranquilla
-								<label for="" class="form-check-label"></label>
-							</div>
-						</div>
-
-						<div class="col-3">
-
-							<div class="form-check">
-								<input type="radio" name="" id="" class="form-check-input">Santa Marta
-								<label for="" class="form-check-label"></label>
-							</div>
-						</div>
-
-					</div>
-					<div class="row d-flex justify-content-center">
-						<div class="col-6">
-							<table class="table table-bordered border-light table-sm">
-								<thead>
-									<tr>
-										<th scope="col">Tipos de Habitaciones</th>
-										<th scope="col">Precio por noche</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td scope="row">Sencilla</td>
-										<td>$80.000</th>
-									</tr>
-									<tr>
-										<td scope="row">Doble</td>
-										<td>$100.000</td>
-									</tr>
-									<tr>
-										<td scope="row">Doble Sencilla</td>
-										<td>$100.000</td>
-									</tr>
-									<tr>
-										<td scope="row">Múltiple</td>
-										<td>$120.000</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-3">
-							<label for="" class="form-label">Tipo de Habitación</label>
-							<select name="" id="" class="form-select form-select-sm">
-								<option selected>Elige</option>
-								<option value="">Sencilla</option>
-								<option value="">Doble</option>
-								<option value="">Doble Sencilla</option>
-								<option value="">Múltiple</option>
-							</select>
-						</div>
-						<div class="col-3">
-							<label for="" class="form-label">Número de personas</label>
-							<input type="number" name="" id="" min="1" max="4" class="form-control form-control-sm ">
-						</div>
-						<div class="col-3">
-							<label for="" class="form-label">Fecha de llegada</label>
-							<input type="date" name="" id="" class="form-control form-control-sm">
-						</div>
-						<div class="col-3">
-							<label for="" class="form-label">Número de días</label>
-							<input type="number" name="" id="" min="1" max="30" class="form-control form-control-sm">
-						</div>
-					</div>
-				</form>
 			</div>
-		</div>
+			<!-- Formulario -->
+			<div class="container c_form d-flex justify-content-center">
+				<div class="container-form">
+					<form action="">
+						<!-- Fila #1 -->
+						<div class="row mb-3">
+							<div class="col-4">
+								<label  class="form-label ">Nombre</label>
+								<input type="text"  class="form-control form-control-sm" placeholder="Nombre">
+							</div>
+							<div class="col-4">
+								<label  class="form-label">
+									Apellido
+								</label>
+								<input type="text" class="form-control form-control-sm" placeholder="Apellido">
+							</div>
+							<div class="col-4">
+								<label class="form-label">Cédula</label>
+								<input type="text" class="form-control form-control-sm" placeholder="Cédula">
+							</div>
+						</div>
+						<!-- Fila #2 -->
+						<div class="row mb-3">
+							<div class="col-2">
+								<label class="form-label">Ciudad</label>
+							</div>
+							<div class="col-3">
+								<div class="form-check">
+									<input type="radio" name="ciudad" class="form-check-input">Cartagena
+									<label class="form-check-label"></label>
+								</div>
+							</div>
+							<div class="col-3">
+								<div class="form-check ">
+									<input type="radio" name="ciudad" class="form-check-input">Barranquilla
+									<label class="form-check-label"></label>
+								</div>
+							</div>
+							<div class="col-3">
+								<div class="form-check">
+									<input type="radio" name="ciudad" class="form-check-input">Santa Marta
+									<label class="form-check-label"></label>
+								</div>
+							</div>
+						</div>
+						<!-- Fila #3 -->
+						<div class="row mb-3 d-flex justify-content-center">
+							<div class="col-6">
+								<table class="table table-bordered border-light table-sm">
+									<thead>
+										<tr>
+											<th scope="col">Tipos de Habitaciones</th>
+											<th scope="col">Precio por noche</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td scope="row">Sencilla</td>
+											<td>$80.000</th>
+										</tr>
+										<tr>
+											<td scope="row">Doble</td>
+											<td>$100.000</td>
+										</tr>
+										<tr>
+											<td scope="row">Doble Sencilla</td>
+											<td>$100.000</td>
+										</tr>
+										<tr>
+											<td scope="row">Múltiple</td>
+											<td>$120.000</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<!-- Fila #4 -->
+						<div class="row mb-3">
+							<div class="col-3">
+								<label class="form-label">Tipo de Habitación</label>
+								<select class="form-select form-select-sm">
+									<option selected>Elige</option>
+									<option value="sencilla">Sencilla</option>
+									<option value="doble">Doble</option>
+									<option value="doble-sencilla">Doble Sencilla</option>
+									<option value="multiple">Múltiple</option>
+								</select>
+							</div>
+							<div class="col-3">
+								<label class="form-label">Número de personas</label>
+								<input type="number"  min="1" max="4" class="form-control form-control-sm ">
+							</div>
+							<div class="col-3">
+								<label  class="form-label">Fecha de llegada</label>
+								<input type="date" class="form-control form-control-sm">
+							</div>
+							<div class="col-3">
+								<label  class="form-label">Número de días</label>
+								<input type="number"  min="1" max="30" class="form-control form-control-sm">
+							</div>
+						</div>
+						<!-- Fila #5 -->
+						<div class="row mb-3">
+							<div class="col-4">
+								<label class="form-label">¿Desea incluir el desayuno?</label>
+							</div>
+							<div class="col-1">
+								<div class="form-check">
+									<input type="radio" name="desayuno" class="form-check-input">Si
+									<label class="form-check-label"></label>
+								</div>
+							</div>
+							<div class="col-2">
+								<div class="form-check">
+									<input type="radio" name="desayuno"  class="form-check-input">No
+									<label  class="form-check-label"></label>
+								</div>
+							</div>
+						</div>
+						<!-- Fila #6 -->
+						<div class="row mb-3">
+							<div class="col">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+									<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+									<path d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+								</svg>
+								<i> El valor diario del desayuno es de $8.000</i>
+							</div>
+						</div>
+						<!-- Fila #7 -->
+						<div class="row d-flex justify-content-center">
+							<div class="col-auto">
+								<button type="button" class="btn btn-1">Enviar</button>
+							</div>
+						</div>
+
+					</form>
+
+				</div>
+			</div>
+		</a>
 
 	</div>
 

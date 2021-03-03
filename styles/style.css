@@ -73,20 +73,19 @@ body {
 .btn-1:hover {
   background: #0c2037;
   color: white;
+
 }
 
 .second {
-  height: 100vh;
+  height: 98vh;
   margin-top: 20px;
-}
-
-.second{
-  font-size: 13px;
+  margin-bottom: 5px;
+  font-size: 12px;
 }
 
 .titulo {
   color: white;
-  padding-top: 10px;
+
 }
 
 .titulo h2 {
@@ -96,14 +95,20 @@ body {
 
 .c_form {
   background-color: #dbe2ef;
-  height: 83%;
-  width: 800px;
+  height: 530px;
+  width: 750px;
   border-radius: 20px;
+  padding-top: 10px;
 }
 
 .container-form {
   background-color: #dbe2ef;
-  width: 95%;
-  height: 80vh;
+  width: 90%;
   margin: auto;
+height: 100%;
+}
+
+label{
+  font-size: 14px;
+  font-weight: 600;
 }
