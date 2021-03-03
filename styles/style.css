@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+body {
+  background: #112d4e;
+}
+
+.first {
+  height: 100vh;
+}
+
+.nav-link:hover {
+  background: #0c2037;
+  color: white;
+  border-radius: 9px;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 88vh;
+  background-size: cover;
+}
+
+.carousel-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.7;
+}
+
+.carousel-caption {
+  bottom: 70px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.carousel-caption h5 {
+  font-size: 100px;
+  font-weight: 700;
+}
+
+.carousel-caption p {
+  padding-top: 30px;
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+
+.carousel-caption i {
+  font-size: 20px;
+}
+
+.i {
+  margin-top: 20px;
+}
+
+.btn-1 {
+  background: #112d4e;
+  color: white;
+  font-size: 20px;
+  box-shadow: 1px 1px white;
+}
+
+.btn-1:hover {
+  background: #0c2037;
+  color: white;
+}
+
+.second {
+  height: 100vh;
+  margin-top: 20px;
+}
+
+.second{
+  font-size: 13px;
+}
+
+.titulo {
+  color: white;
+  padding-top: 10px;
+}
+
+.titulo h2 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.c_form {
+  background-color: #dbe2ef;
+  height: 83%;
+  width: 800px;
+  border-radius: 20px;
+}
+
+.container-form {
+  background-color: #dbe2ef;
+  width: 95%;
+  height: 80vh;
+  margin: auto;
+}
