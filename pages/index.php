@@ -17,7 +17,7 @@
 <body>
 	<!-- Contenedor Parte 1 -->
 	<div class="first">
-		<!-- NAVEGATION -->
+		<!-- NAV BAR -->
 		<nav class="navbar navbar-expand-sm navbar-light" style="background-color: #112d4e;">
 			<!-- LOGO -->
 			<div class="container-fluid">
@@ -124,22 +124,20 @@
 			<!-- Formulario -->
 			<div class="container c_form d-flex justify-content-center">
 				<div class="container-form">
-					<form action="">
+					<form action="procesar.php" method="POST">
 						<!-- Fila #1 -->
 						<div class="row mb-3">
 							<div class="col-4">
-								<label  class="form-label ">Nombre</label>
-								<input type="text"  class="form-control form-control-sm" placeholder="Nombre">
+								<label class="form-label">Nombre</label>
+								<input name="nombre" type="text" class="form-control form-control-sm" placeholder="Nombre">
 							</div>
 							<div class="col-4">
-								<label  class="form-label">
-									Apellido
-								</label>
-								<input type="text" class="form-control form-control-sm" placeholder="Apellido">
+								<label class="form-label">Apellido</label>
+								<input type="text" class="form-control form-control-sm" placeholder="Apellido" name="apellido">
 							</div>
 							<div class="col-4">
 								<label class="form-label">Cédula</label>
-								<input type="text" class="form-control form-control-sm" placeholder="Cédula">
+								<input type="text" class="form-control form-control-sm" placeholder="Cédula" name="cedula">
 							</div>
 						</div>
 						<!-- Fila #2 -->
@@ -149,19 +147,19 @@
 							</div>
 							<div class="col-3">
 								<div class="form-check">
-									<input type="radio" name="ciudad" class="form-check-input">Cartagena
+									<input type="radio" name="ciudad" value="Cartagena" class="form-check-input">Cartagena
 									<label class="form-check-label"></label>
 								</div>
 							</div>
 							<div class="col-3">
 								<div class="form-check ">
-									<input type="radio" name="ciudad" class="form-check-input">Barranquilla
+									<input type="radio" name="ciudad" value="Barranquilla" class="form-check-input">Barranquilla
 									<label class="form-check-label"></label>
 								</div>
 							</div>
 							<div class="col-3">
 								<div class="form-check">
-									<input type="radio" name="ciudad" class="form-check-input">Santa Marta
+									<input type="radio" name="ciudad" value="Santa Marta" class="form-check-input">Santa Marta
 									<label class="form-check-label"></label>
 								</div>
 							</div>
@@ -201,25 +199,25 @@
 						<div class="row mb-3">
 							<div class="col-3">
 								<label class="form-label">Tipo de Habitación</label>
-								<select class="form-select form-select-sm">
+								<select name="habitacion" class="form-select form-select-sm">
 									<option selected>Elige</option>
-									<option value="sencilla">Sencilla</option>
-									<option value="doble">Doble</option>
-									<option value="doble-sencilla">Doble Sencilla</option>
-									<option value="multiple">Múltiple</option>
+									<option value="Sencilla">Sencilla</option>
+									<option value="Doble">Doble</option>
+									<option value="Doble sencilla">Doble Sencilla</option>
+									<option value="Múltiple">Múltiple</option>
 								</select>
 							</div>
 							<div class="col-3">
 								<label class="form-label">Número de personas</label>
-								<input type="number"  min="1" max="4" class="form-control form-control-sm ">
+								<input type="number" min="1" max="4" class="form-control form-control-sm" value="person" name="num_person[]">
 							</div>
 							<div class="col-3">
-								<label  class="form-label">Fecha de llegada</label>
-								<input type="date" class="form-control form-control-sm">
+								<label class="form-label">Fecha de llegada</label>
+								<input type="date" class="form-control  form-control-sm" name="fecha">
 							</div>
 							<div class="col-3">
-								<label  class="form-label">Número de días</label>
-								<input type="number"  min="1" max="30" class="form-control form-control-sm">
+								<label class="form-label">Número de días</label>
+								<input type="number" min="1" max="30" class="form-control form-control-sm" name="num_day[]">
 							</div>
 						</div>
 						<!-- Fila #5 -->
@@ -229,14 +227,14 @@
 							</div>
 							<div class="col-1">
 								<div class="form-check">
-									<input type="radio" name="desayuno" class="form-check-input">Si
+									<input type="radio" name="desayuno" value="Si" class="form-check-input">Si
 									<label class="form-check-label"></label>
 								</div>
 							</div>
 							<div class="col-2">
 								<div class="form-check">
-									<input type="radio" name="desayuno"  class="form-check-input">No
-									<label  class="form-check-label"></label>
+									<input type="radio" name="desayuno" value="No" class="form-check-input">No
+									<label class="form-check-label"></label>
 								</div>
 							</div>
 						</div>
@@ -253,7 +251,7 @@
 						<!-- Fila #7 -->
 						<div class="row d-flex justify-content-center">
 							<div class="col-auto">
-								<button type="button" class="btn btn-1">Enviar</button>
+								<input type="submit" class="btn btn-1" value="Enviar"></input>
 							</div>
 						</div>
 					</form>
@@ -265,4 +263,5 @@
 	<script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
 	</script>
 </body>
+
 </html>
