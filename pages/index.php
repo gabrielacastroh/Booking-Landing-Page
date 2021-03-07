@@ -166,29 +166,34 @@
 						</div>
 						<!-- Fila #3 -->
 						<div class="row mb-3 d-flex justify-content-center">
-							<div class="col-6">
+							<div class="col-8">
 								<table class="table table-bordered border-light table-sm">
 									<thead>
 										<tr>
 											<th scope="col">Tipos de Habitaciones</th>
+											<th scope="col">Disposición</th>
 											<th scope="col">Precio por noche</th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
 											<td scope="row">Sencilla</td>
-											<td>$80.000</th>
+											<td>1 cama</td>
+											<td>$80.000</td>
 										</tr>
 										<tr>
 											<td scope="row">Doble</td>
+											<td>1 cama doble</td>
 											<td>$100.000</td>
 										</tr>
 										<tr>
 											<td scope="row">Doble Sencilla</td>
+											<td>2 camas sencillas</td>
 											<td>$100.000</td>
 										</tr>
 										<tr>
 											<td scope="row">Múltiple</td>
+											<td>3 o 4 camas sencillas</td>
 											<td>$120.000</td>
 										</tr>
 									</tbody>

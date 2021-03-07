@@ -155,33 +155,12 @@
 					<div class="row mb-3">
 						<div class="col-8">
 							<p class="fw-light">
-								<?php print("$tipo_Habitacion"); ?>
+								Tipo de habitación
 							</p>
 						</div>
 						<div class="col">
 							<p class="fw-bold">
-								<?php
-								$valor = 0;
-								$total = 0;
-								switch ($tipo_Habitacion) {
-									case "Sencilla":
-										$valor = 80000;
-										print("$$valor");
-										break;
-									case "Doble":
-										$valor = 100000;
-										print("$$valor");
-										break;
-									case "Doble sencilla":
-										$valor += 100000;
-										print("$$valor");
-										break;
-									case "Múltiple";
-										$valor = 120000;
-										print("$$valor");
-										break;
-								}
-								?>
+								<?php print("$tipo_Habitacion"); ?>
 							</p>
 						</div>
 					</div>
@@ -192,6 +171,23 @@
 						<div class="col">
 							<p class="fw-bold">
 								<?php
+								$valor = 0;
+								$total = 0;
+								switch ($tipo_Habitacion) {
+									case "Sencilla":
+										$valor = 80000;
+										break;
+									case "Doble":
+										$valor = 100000;
+										break;
+									case "Doble sencilla":
+										$valor = 100000;
+										break;
+									case "Múltiple";
+										$valor = 120000;
+										break;
+								}
+
 								$total_day = $valor * $days;
 								print("$$total_day");
 								$total += $total_day;
@@ -201,20 +197,19 @@
 					</div>
 					<div class="row mb-3">
 						<div class="col-8">
-							<p class="fw-light">Desayuno x<?php print("$days");  ?> </p>
-
+							<p class="fw-light">Desayuno </p>
 						</div>
 						<div class="col">
 							<p class="fw-bold">
 								<?php
 								if ($desayuno === "Si") {
-									$total_desayuno = $days * 8000;
+									$total_desayuno =( ($numero_persona * 8000) * $days);
 									print("$$total_desayuno");
 									$total += $total_desayuno;
-								}else{
+								} else {
 									print("No aplica");
 								}
-								
+
 
 								?>
 							</p>
