@@ -124,20 +124,21 @@
 			<!-- Formulario -->
 			<div class="container c_form d-flex justify-content-center">
 				<div class="container-form">
-					<form action="procesar.php" method="POST">
+					<form name="formulario" action="procesar.php" method="POST" class="needs-validation" novalidate>
 						<!-- Fila #1 -->
 						<div class="row mb-3">
 							<div class="col-4">
-								<label class="form-label">Nombre</label>
-								<input name="nombre" type="text" class="form-control form-control-sm" placeholder="Nombre">
+								<label class="form-label" for="validation_nombre">Nombre</label>
+								<input id="validation_nombre" name="nombre" type="text" class="form-control form-control-sm" placeholder="Nombre" required>
+							</div>
+
+							<div class="col-4">
+								<label class="form-label" for="validation_apellido">Apellido</label>
+								<input id="validation_apellido" type="text" class="form-control form-control-sm" placeholder="Apellido" name="apellido" required>
 							</div>
 							<div class="col-4">
-								<label class="form-label">Apellido</label>
-								<input type="text" class="form-control form-control-sm" placeholder="Apellido" name="apellido">
-							</div>
-							<div class="col-4">
-								<label class="form-label">Cédula</label>
-								<input type="text" class="form-control form-control-sm" placeholder="Cédula" name="cedula">
+								<label class="form-label" for="validation_cedula">Cédula</label>
+								<input id="validation_cedula" type="text" class="form-control form-control-sm" placeholder="Cédula" name="cedula" required>
 							</div>
 						</div>
 						<!-- Fila #2 -->
@@ -145,21 +146,22 @@
 							<div class="col-2">
 								<label class="form-label">Ciudad</label>
 							</div>
-							<div class="col-3">
+							<div class="col-2">
 								<div class="form-check">
-									<input type="radio" name="ciudad" value="Cartagena" class="form-check-input">Cartagena
-									<label class="form-check-label"></label>
+									<input id="validation_cartagena" type="radio" name="ciudad" value="Cartagena" class="form-check-input" required>Cartagena
+									<label class="form-check-label" for="validation_cartagena"></label>
+
 								</div>
 							</div>
-							<div class="col-3">
+							<div class="col-2">
 								<div class="form-check ">
-									<input type="radio" name="ciudad" value="Barranquilla" class="form-check-input">Barranquilla
-									<label class="form-check-label"></label>
+									<input id="validation_quilla" type="radio" name="ciudad" value="Barranquilla" class="form-check-input" required>Barranquilla
+									<label for="validation_quilla" class="form-check-label"></label>
 								</div>
 							</div>
-							<div class="col-3">
+							<div class="col-2">
 								<div class="form-check">
-									<input type="radio" name="ciudad" value="Santa Marta" class="form-check-input">Santa Marta
+									<input type="radio" name="ciudad" value="Santa Marta" class="form-check-input" required>Santa Marta
 									<label class="form-check-label"></label>
 								</div>
 							</div>
@@ -203,9 +205,9 @@
 						<!-- Fila #4 -->
 						<div class="row mb-3">
 							<div class="col-3">
-								<label class="form-label">Tipo de Habitación</label>
-								<select name="habitacion" class="form-select form-select-sm">
-									<option selected>Elige</option>
+								<label for="validation_habi" class="form-label">Tipo de Habitación</label>
+								<select id="validation_habi" name="habitacion" class="form-select form-select-sm" required>
+									<option selected disabled value="">Elige</option>
 									<option value="Sencilla">Sencilla</option>
 									<option value="Doble">Doble</option>
 									<option value="Doble sencilla">Doble Sencilla</option>
@@ -213,16 +215,16 @@
 								</select>
 							</div>
 							<div class="col-3">
-								<label class="form-label">Número de personas</label>
-								<input type="number" min="1" max="4" class="form-control form-control-sm" value="person" name="num_person[]">
+								<label for="validation_nump" class="form-label">Número de personas</label>
+								<input id="validation_nump" type="number" min="1" max="4" class="form-control form-control-sm" value="person" name="num_person[]" required>
 							</div>
 							<div class="col-3">
-								<label class="form-label">Fecha de llegada</label>
-								<input type="date" class="form-control  form-control-sm" name="fecha">
+								<label for="validation_fecha" class="form-label">Fecha de llegada</label>
+								<input id="validation_fecha" type="date" class="form-control  form-control-sm" name="fecha" required>
 							</div>
 							<div class="col-3">
-								<label class="form-label">Número de días</label>
-								<input type="number" min="1" max="30" class="form-control form-control-sm" name="num_day[]">
+								<label for="validation_numd" class="form-label">Número de días</label>
+								<input id="validation_numd" type="number" min="1" max="30" class="form-control form-control-sm" name="num_day[]" required>
 							</div>
 						</div>
 						<!-- Fila #5 -->
@@ -232,14 +234,14 @@
 							</div>
 							<div class="col-1">
 								<div class="form-check">
-									<input type="radio" name="desayuno" value="Si" class="form-check-input">Si
-									<label class="form-check-label"></label>
+									<input id="validation_dsi" type="radio" name="desayuno" value="Si" class="form-check-input" required>Si
+									<label for="validation_dsi" class="form-check-label"></label>
 								</div>
 							</div>
 							<div class="col-2">
 								<div class="form-check">
-									<input type="radio" name="desayuno" value="No" class="form-check-input">No
-									<label class="form-check-label"></label>
+									<input id="validation_dno" type="radio" name="desayuno" value="No" class="form-check-input" required>No
+									<label for="validation_dno" class="form-check-label"></label>
 								</div>
 							</div>
 						</div>
@@ -256,7 +258,7 @@
 						<!-- Fila #7 -->
 						<div class="row d-flex justify-content-center">
 							<div class="col-auto">
-								<input type="submit" class="btn btn-1" value="Enviar"></input>
+							 <input type="submit" class="btn btn-1" value="Enviar" ></input>
 							</div>
 						</div>
 					</form>
@@ -266,6 +268,28 @@
 	</div>
 	<!-- Option 1: Bootstrap Bundle with Popper -->
 	<script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+	</script>
+	<!-- Validar campos JS -->
+	<script>
+		// Example starter JavaScript for disabling form submissions if there are invalid fields
+		(function() {
+			'use strict'
+
+			// Fetch all the forms we want to apply custom Bootstrap validation styles to
+			var forms = document.querySelectorAll('.needs-validation')
+
+			// Loop over them and prevent submission
+			Array.prototype.slice.call(forms)
+				.forEach(function(form) {
+					form.addEventListener('submit', function(event) {
+						if (!form.checkValidity()) {
+							event.preventDefault()
+							event.stopPropagation()
+						}
+						form.classList.add('was-validated')
+					}, false)
+				})
+		})()
 	</script>
 </body>
 
