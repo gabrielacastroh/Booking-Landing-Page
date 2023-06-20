@@ -7,10 +7,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="/Tarea_PHP/styles/bootstrap.min.css">
+	<link rel="stylesheet" href="./../styles/bootstrap.min.css">
 
 	<!-- CSS -->
-	<link rel="stylesheet" href="/Tarea_PHP/styles/style.css">
+	<link rel="stylesheet" href="./../styles/style.css">
 	<title>Caribe Resort</title>
 </head>
 
@@ -22,7 +22,7 @@
 			<!-- LOGO -->
 			<div class="container-fluid">
 				<a class="navbar-brand" href="#">
-					<img class="d-inline-block align-top" src="/Tarea_PHP/img/logo_white_large.png" alt="logo" width="250" height="30">
+					<img class="d-inline-block align-top" src="./../img/logo_white_large.png" alt="logo" width="250" height="30">
 				</a>
 				<!-- NAVEGATION -->
 				<div class="collapse navbar-collapse justify-content-end">
@@ -209,8 +209,6 @@
 								} else {
 									print("No aplica");
 								}
-
-
 								?>
 							</p>
 						</div>
@@ -226,9 +224,9 @@
 							</p>
 						</div>
 					</div>
-					<div class="row d-flex justify-content-center">
+					<div class="row d-flex justify-content-center py-2">
 						<div class="col-auto">
-							<input onclick="alert('Bienvenido/a a Caribe Resort')" type="submit" class="btn btn-1" value="Pagar"></input>
+							<input onclick="alert('Bienvenido/a a Caribe Resort')" type="submit" class="btn btn-2" value="Pagar"></input>
 						</div>
 					</div>
 

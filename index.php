@@ -7,10 +7,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="/Tarea_PHP/styles/bootstrap.min.css">
+	<link rel="stylesheet" href="./styles/bootstrap.min.css">
 
 	<!-- CSS -->
-	<link rel="stylesheet" href="/Tarea_PHP/styles/style.css">
+	<link rel="stylesheet" href="./styles/style.css">
 	<title>Caribe Resort</title>
 </head>
 
@@ -22,7 +22,7 @@
 			<!-- LOGO -->
 			<div class="container-fluid">
 				<a class="navbar-brand" href="#">
-					<img class="d-inline-block align-top" src="/Tarea_PHP/img/logo_white_large.png" alt="logo" width="250" height="30">
+					<img class="d-inline-block align-top" src="./img/logo_white_large.png" alt="logo" width="250" height="30">
 				</a>
 				<!-- NAVEGATION -->
 				<div class="collapse navbar-collapse justify-content-end">
@@ -53,7 +53,7 @@
 			</div>
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-					<img src="/Tarea_PHP/img/caribe.jpg" class="d-block w-100" alt="Cartagena-carousel">
+					<img src="./img/caribe.jpg" class="d-block w-100" alt="Cartagena-carousel">
 					<div class="carousel-caption d-none d-md-block">
 						<h5>Cartagena</h5>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga harum necessitatibus dolorum aliquid dolores doloribus, qui aut inventore rem asperiores unde eligendi! Atque ipsa ullam ipsum beatae ratione asperiores libero?</p>
@@ -70,7 +70,7 @@
 					</div>
 				</div>
 				<div class="carousel-item">
-					<img src="/Tarea_PHP/img/caribe2.jpg" class="d-block w-100" alt="Barranquilla-carousel">
+					<img src="./img/caribe2.jpg" class="d-block w-100" alt="Barranquilla-carousel">
 					<div class="carousel-caption d-none d-md-block">
 						<h5>Barranquilla</h5>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga harum necessitatibus dolorum aliquid dolores doloribus, qui aut inventore rem asperiores unde eligendi! Atque ipsa ullam ipsum beatae ratione asperiores libero?.</p>
@@ -87,7 +87,7 @@
 					</div>
 				</div>
 				<div class="carousel-item">
-					<img src="/Tarea_PHP/img/caribe3.jpg" class="d-block w-100" alt="SantaMarta-carousel">
+					<img src="./img/caribe3.jpg" class="d-block w-100" alt="SantaMarta-carousel">
 					<div class="carousel-caption d-none d-md-block">
 						<h5>Santa Marta</h5>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga harum necessitatibus dolorum aliquid dolores doloribus, qui aut inventore rem asperiores unde eligendi! Atque ipsa ullam ipsum beatae ratione asperiores libero?</p>
@@ -124,7 +124,7 @@
 			<!-- Formulario -->
 			<div class="container c_form d-flex justify-content-center">
 				<div class="container-form">
-					<form name="formulario" action="procesar.php" method="POST" class="needs-validation" novalidate>
+					<form name="formulario" action="./pages/procesar.php" method="POST" class="needs-validation" novalidate>
 						<!-- Fila #1 -->
 						<div class="row mb-3">
 							<div class="col-4">

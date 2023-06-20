@@ -134,5 +134,17 @@ label {
 }
 
 .reserva_label {
+  font-size: 1.1rem;
+}
+
+.btn-2 {
+  background: white;
+  color:#0c2037;
   font-size: 20px;
+  box-shadow: 1px 1px white;
+}
+
+.btn-2:hover {
+  background: #0c2037;
+  color: white;
 }
