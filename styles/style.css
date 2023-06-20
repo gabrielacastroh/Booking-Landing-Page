@@ -93,7 +93,7 @@ body {
 }
 
 .c_form {
-  background-color: #dbe2ef;
+  background-color: #e5efdb;
   height: 530px;
   width: 750px;
   border-radius: 20px;
@@ -121,10 +121,10 @@ label {
 }
 
 .cuerpo_reserva {
-  background-color: #dbe2ef;
+  background-color:#dbe2ef;
   height: 400px;
   border-radius: 10px;
-  padding: 20px;
+  padding: 1.5%;
 }
 
 .info_reserva {
@@ -137,7 +137,7 @@ label {
   font-size: 1.1rem;
 }
 
-.btn-2 {
+/* .btn-2 {
   background: white;
   color:#0c2037;
   font-size: 20px;
@@ -147,4 +147,8 @@ label {
 .btn-2:hover {
   background: #0c2037;
   color: white;
+} */
+
+.valor{
+  font-size: .9rem;
 }

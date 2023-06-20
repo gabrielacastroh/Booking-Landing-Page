@@ -43,12 +43,12 @@
 				</div>
 			</div>
 		</nav>
-		<div class="container">
+		<div class="row">
 			<div class="sub-titulo">
 				<h2>Detalle de reserva</h2>
 			</div>
 			<div class="row py-4 justify-content-evenly">
-				<div class="col-7 cuerpo_reserva">
+				<div class="col-8 cuerpo_reserva">
 					<div class="row mb-3 text-center">
 						<div class="col">
 							<p class="fw-bold reserva_label">Nombre</p>
@@ -226,7 +226,7 @@
 					</div>
 					<div class="row d-flex justify-content-center py-2">
 						<div class="col-auto">
-							<input onclick="alert('Bienvenido/a a Caribe Resort')" type="submit" class="btn btn-2" value="Pagar"></input>
+							<input onclick="alert('Bienvenido/a a Caribe Resort')" type="submit" class="btn btn-1" value="Pagar"></input>
 						</div>
 					</div>
 
